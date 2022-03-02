@@ -1,4 +1,4 @@
-import { fusebox, sparky, pluginLink } from 'fuse-box'
+import { fusebox, sparky } from 'fuse-box'
 class Context {
 	isProduction
 	runServer
@@ -7,19 +7,6 @@ class Context {
 			entry: 'index.tsx',
 			target: 'browser',
 			webIndex: false,
-			// plugins: [pluginLink(/\.obj/, { useDefault: true })],
-			// devServer: {
-			// 	enabled: Boolean(this.runServer),
-			// 	httpServer: true,
-			// 	hmrServer: true,
-			// },
-			// ...(this.isProduction ? {} : {
-			// 	watcher: {
-			// 		include: ['src', 'lib'],
-			// 	},
-			// 	logging: { level: 'verbose' },
-			// }),
-			// hmr: Boolean(this.runServer),
 		})
 	}
 }
