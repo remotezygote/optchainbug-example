@@ -5,6 +5,10 @@
 	"main": "index.tsx",
 	"author": "John Bragg <john@warder.co>",
 	"license": "MIT",
+	"scripts": {
+		"start": "ts-node fuse.ts",
+		"compile": "ts-node fuse.ts dist"
+	},
 	"devDependencies": {
 		"@types/node": "^17.0.21",
 		"fuse-box": "^4.0.0",

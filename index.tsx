@@ -1,15 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import InteractiveMap from 'react-map-gl'
 import maplibregl from 'maplibre-gl'
 
-const Map = () => {
-	const mapRef = useRef(null)
-	return (
-		<InteractiveMap
-			mapLib={maplibregl}
-			ref={mapRef}>
-		</InteractiveMap>
-	)
-}
+const Map = () => <InteractiveMap mapLib={maplibregl} />
 
 export default Map
