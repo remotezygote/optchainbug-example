@@ -1,7 +1,6 @@
 import React from 'react'
-import InteractiveMap from 'react-map-gl'
-import maplibregl from 'maplibre-gl'
+import Map from 'react-map-gl'
 
-const Map = () => <InteractiveMap mapLib={maplibregl} />
+const Mapper = () => <Map />
 
-export default Map
+export default Mapper
